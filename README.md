@@ -22,6 +22,7 @@ The system addresses variations in manual/semi-automated press fitting by deploy
 
 ## ⚙️ System Architecture & Methodology
 
+```mermaid
 flowchart TD
     subgraph Station["Physical Assembly Station (Engine Head)"]
         LC["Load Cell (Force Feedback)"]
@@ -55,3 +56,4 @@ flowchart TD
     Reject --> HMI
     HMI --> Counter
     Counter --> DB
+```
