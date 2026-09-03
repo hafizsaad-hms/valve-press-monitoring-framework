@@ -1,0 +1,13 @@
+Tag Name,Data Type,Direction,Engineering Unit,Description
+RAW_LOAD_CELL_INPUT,INT,Input,Counts (0-27648),Analog reading from load cell signal transmitter (4-20 mA)
+RAW_DISPLACEMENT_INPUT,INT,Input,Counts (0-27648),Analog reading from linear stroke sensor (0-10 V)
+SCALED_FORCE_VAL,REAL,Internal,kN,Scaled instantaneous force applied by the ram
+SCALED_POSITION_VAL,REAL,Internal,mm,Scaled instantaneous position along stroke axis
+CYLINDER_HEAD_SER_NO,DINT,Input/Output,N/A,Batch serial tracking index for current engine head
+FORCE_UPPER_LIMIT,REAL,Internal,kN,Maximum permissible force threshold at current stroke step
+FORCE_LOWER_LIMIT,REAL,Internal,kN,Minimum required seating force threshold
+ALARM_FORCE_EXCEEDED,BOOL,Output,N/A,Interlock trigger if pressing force spikes prematurely
+ALARM_INCOMPLETE_STROKE,BOOL,Output,N/A,Interlock trigger if stroke stops prior to target depth
+PASS_CYCLE_STROKE,BOOL,Output,N/A,Cycle validation flag indicating full seating within spec
+ENGINE_HEAD_COUNT_TOTAL,DINT,Output,Units,Cumulative verified engine head counter
+HMI_SYSTEM_RESET_PB,BOOL,Input,N/A,Operator clearance command following fault investigation
